@@ -1,0 +1,18 @@
+// Media general config
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-style: none;
+  vertical-align: middle;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+video {
+  width: 100%;
+  vertical-align: top;
+}

@@ -1,0 +1,23 @@
+// Mixins
+
+@mixin font-size-vw($size) {
+  font-size: get-vw($size);
+}
+
+@mixin font-size($size) {
+  font-size: calculate-rem($size);
+}
+
+@mixin line-height($size) {
+  line-height: calculate-rem($size);
+}
+
+@mixin centered-content() {
+  position: relative;
+  margin: 0 5%;
+
+  @include size-xl {
+    width: 1280px;
+    margin: 0 auto;
+  }
+}

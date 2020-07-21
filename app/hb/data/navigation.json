@@ -1,0 +1,22 @@
+{
+    "main_nav": {
+        "optional_classes": "",
+        "navpoints": [
+            {
+                "title": "section1",
+                "url": "#section1",
+                "name": "section1"
+            },
+            {
+                "title": "section2",
+                "url": "#section2",
+                "name": "section2"
+            },
+            {
+                "title": "section3",
+                "url": "#section3",
+                "name": "section3"
+            }
+        ] 
+    }
+}

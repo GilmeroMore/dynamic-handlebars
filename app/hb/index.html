@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {{#> Head}}
+    header not found
+    {{/ Head}}
+
+    <body class="{{@local.optional_classes}}">
+
+        {{#> Header}}
+        Header not found
+        {{/ Header}}
+
+        <main class="main">
+            {{#each sections}}
+            {{> (lookup . 'type') }}
+            {{/each}}
+        </main>
+
+        {{#> Footer}}
+        footer not found
+        {{/ Footer}}
+
+    </body>
+</html>

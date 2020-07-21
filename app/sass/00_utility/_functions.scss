@@ -1,0 +1,24 @@
+// Utility functions
+
+@function calculate-rem($size) {
+  $rem-size: $size / 16px;
+  @return #{$rem-size}rem;
+}
+
+@function calculate-em($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1em;
+}
+
+@function get-vw($target) {
+  $vw-context: (1140 * 0.01) * 1px;
+  @return ($target / $vw-context) * 1vw;
+} // calculate font vw depending on viewport / 1140px */
+

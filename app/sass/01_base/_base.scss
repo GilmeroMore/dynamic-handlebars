@@ -1,0 +1,18 @@
+//Base config
+
+body {
+  background-color: $blue;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+
+.main {
+  flex: 1 0 auto;
+  position: relative;
+  margin: 0 auto;
+  min-height: 1px; // IE 11 fix
+  max-width: 1280px;
+}

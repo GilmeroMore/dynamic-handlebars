@@ -1,0 +1,47 @@
+/**
+ * @file
+ * Breakpoints
+ *
+ * SCSS Breakpoints.
+ */
+
+ $size-s: 375px;
+ $size-m: 600px;
+ $size-l: 1024px;
+ $size-xl: 1280px;
+ $size-container: 1280px;
+
+// Medium Mobiles ( >= 375px )
+@mixin size-s {
+  @media (min-width: $size-s) {
+    @content;
+  }
+}
+
+// Big Mobile, Phablet, Tablet ( >= 600px )
+@mixin size-m {
+  @media (min-width: $size-m) {
+    @content;
+  }
+}
+
+// Small Desktops, Medium Desktops ( >= 1024px )
+@mixin size-l {
+  @media (min-width: $size-l) {
+    @content;
+  }
+}
+
+// Big Desktops ( >= 1600px)
+@mixin size-xl {
+  @media (min-width: $size-xl) {
+    @content;
+  }
+}
+
+// Custom Breakpoint when the element reachs the max-width container
+@mixin size-container {
+  @media (min-width: $size-container) {
+    @content;
+  }
+}

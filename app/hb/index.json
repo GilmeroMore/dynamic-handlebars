@@ -1,0 +1,44 @@
+{
+  "pageID": "index",
+  "pageTitle": "Homepage",
+  "optional_classes": "index",
+  "sections": [
+    {
+      "id": "Hero-home",
+      "optional_classes": "",
+      "type": "Hero",
+      "content": {
+        "heading": "",
+        "copy_text": ""
+      }
+    },
+    {
+      "id": "standorte",
+      "optional_classes": "",
+      "type": "Section",
+      "content": {
+        "heading": "",
+        "standorte": [
+          {
+            "ort": ""
+          },
+          {
+            "ort": ""
+          },
+         {
+          "ort": ""
+         },
+         {
+          "ort": ""
+         },
+         {
+          "ort": ""
+         },
+         {
+          "ort": ""
+         } 
+        ]
+      }
+    }
+  ]
+}

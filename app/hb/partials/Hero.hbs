@@ -1,0 +1,38 @@
+<section class="Hero {{#if optional_classes}}{{optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+    <div class="Hero__content">
+        <div class="Hero__heading">
+            {{{content.heading}}}
+        </div>
+
+        {{#if content.copy_text}}
+            <div class="Hero__copy_text">
+                {{{content.copy_text}}}
+            </div>
+        {{/if}}
+    </div>
+</section>
+
+{{!
+
+Description:
+
+Hero component.
+
+Texts:
+
+    heading: 100 chars max recommended.
+    copy_text: 500 chars max recommended.
+
+Json usage:
+
+{
+    "id": "section_id",
+    "optional_classes": "",
+    "type": "LORFAB_Hero",
+    "content": {
+        "heading": "any html text",
+        "copy_text": "any html text"
+    }
+}
+
+}}

@@ -1,0 +1,17 @@
+<head>
+    {{#with data.head}}
+        <title>{{#if site_title}}{{site_title}}{{/if}} {{#if pageTitle}}{{#if site_title}}- {{/if}}{{pageTitle}}{{/if}}</title>
+
+        {{#each metatags}}
+            {{{this}}}
+        {{/each}}
+
+        {{#each js}}
+            {{{this}}}
+        {{/each}}
+
+        {{#each css}}
+            {{{this}}}
+        {{/each}}
+    {{/with}}
+</head>

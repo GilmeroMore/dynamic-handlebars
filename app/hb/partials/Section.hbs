@@ -1,0 +1,12 @@
+<section class="Standorte {{#if optional_classes}}{{optional_classes}}{{/if}}" {{#if id}}id="{{id}}"{{/if}}>
+    <div class="Standorte__heading">
+        {{{content.heading}}}
+    </div>
+    <div class="Standorte__orte">
+        <ul>
+          {{#each content.standorte}}
+              <li><p>{{{ort}}}</p></li>
+          {{/each}}
+        </ul>
+    </div>
+</section>

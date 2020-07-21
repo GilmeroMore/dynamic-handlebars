@@ -1,0 +1,15 @@
+<header class="">
+  <a href="/" class="header-logo-wrapper" title="{{header.configuration.logo_alt}}">
+    <img src="{{header.configuration.logo_url}}" alt="{{header.configuration.logo_alt}}" />
+  </a>
+
+    <nav class="nav">
+      {{#if navigation.main_nav.navpoints}}
+        <ul>
+          {{#each navigation.main_nav.navpoints}}
+              <li><a href="{{url}}" title="{{title}}" >{{title}}</a></li>
+          {{/each}}
+        </ul>
+      {{/if}}
+    </nav>
+</header>

@@ -1,0 +1,13 @@
+/* Change default typefaces here */
+body {
+  color: $white;
+  font-family: "Arial", sans-serif;
+  @include font-size(16px);
+  line-height: 1.1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include size-l {
+    @include font-size(18px);
+  }
+}

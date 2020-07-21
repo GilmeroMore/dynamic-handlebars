@@ -1,0 +1,18 @@
+/**
+ * @file
+ * Color Rules
+ *
+ * Colors will be ordered by importancy: primary, secondary, tertiary, quaternay, quinary...
+ * The importancy variable will point to another color variable. F.e. $primary-color: $black;
+ * Colors are defined in HEX code
+ * Colors are named following this website: http://chir.ag/projects/name-that-color/
+ * Colors with transparency will be used like: rgba(variable in HEX, transparency). F.e: rgba($black, 0.5);
+ */
+
+// General
+$blue: #37A1DC;
+$red: #D61126;
+
+// Black and White
+$white: #FFFFFF;
+$black: #000000;
